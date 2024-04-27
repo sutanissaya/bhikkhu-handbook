@@ -1,6 +1,7 @@
 import streamlit as st
 from streamlit.logger import get_logger
 from streamlit.hello.utils import show_code
+from st_pages import Page, show_pages, add_page_title
 import altair as alt
 import numpy as np
 import pandas as pd
@@ -12,8 +13,22 @@ st.set_page_config(page_title="Pāḷi Text Juncture Splitter", page_icon="🌴"
 #st.sidebar.header("Language")
 #st.sidebar.write("""<div style="width:100%;"><img src="https://cdn.britannica.com/33/4833-004-828A9A84/Flag-United-States-of-America.jpg" width="22px"> English</img></div>
 #                 <div style="width:100%;"><a href="https://translate.google.co.id/?hl=id&sl=en&tl=id&op=translate"><img src="https://i.pinimg.com/736x/91/3d/f8/913df8098c7237aae279c4628302f49c.jpg" width="22px"> Bahasa Indonesia</img></a></div>""", unsafe_allow_html=True)
- 
+
 #st.sidebar.divider()
+
+
+
+# Optional -- adds the title and icon to the current page
+add_page_title()
+
+# Specify what pages should be shown in the sidebar, and what their titles 
+# and icons should be
+show_pages(
+    [
+        Page("morning-chant.py", "Morning Chant", "🏠")
+    ]
+)
+
 st.sidebar.header("Customize your split text:")
 st.sidebar.markdown("Customize your split text:")
 # pages/morning-chant.py
