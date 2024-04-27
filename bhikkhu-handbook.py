@@ -1,12 +1,12 @@
 import streamlit as st
 from streamlit.logger import get_logger
 from streamlit.hello.utils import show_code
-from st_pages import Page, show_pages, add_page_title
 import altair as alt
 import numpy as np
 import pandas as pd
 import glob
 import os
+from st_pages import Page, show_pages, add_page_title
 LOGGER = get_logger(__name__)
 st.set_page_config(page_title="Pāḷi Text Juncture Splitter", page_icon="🌴")
 # Sidebar
