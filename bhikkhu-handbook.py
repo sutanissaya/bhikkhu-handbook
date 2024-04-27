@@ -7,6 +7,22 @@ import pandas as pd
 import glob
 import os
 
+with st.echo("below"):
+    from st_pages import Page, Section, add_page_title, show_pages
+
+    "## Declaring the pages in your app:"
+
+    show_pages(
+        [
+            Page("bhikkhu-handbook/pages/morning-chant.py", "Home", "🏠"),
+
+        ]
+    )
+
+    add_page_title()  # Optional method to add title and icon to current page
+    # Also calls add_indentation() by default, which indents pages within a section
+
+
 LOGGER = get_logger(__name__)
 st.set_page_config(page_title="Pāḷi Text Juncture Splitter", page_icon="🌴")
 # Sidebar
