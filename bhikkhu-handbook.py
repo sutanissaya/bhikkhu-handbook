@@ -15,6 +15,8 @@ st.set_page_config(page_title="Pāḷi Text Juncture Splitter", page_icon="🌴"
  
 #st.sidebar.divider()
 st.sidebar.header("Customize your split text:")
+st.sidebar.markdown("Customize your split text:")
+# pages/morning-chant.py
 st.markdown("<h1 style='text-align: center;'>Pāḷi Text Juncture Splitter 🌴</h1>", unsafe_allow_html=True)
 st.markdown("<h4 style='text-align: center;'><em>For easier Pāḷi reading.</em></h3>", unsafe_allow_html=True)
 st.divider()
